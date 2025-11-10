@@ -1,0 +1,49 @@
+[
+  {
+    "step": "1",
+    "description": "Load Object Repo",
+    "action": "loador",
+    "params": {
+      "file": "objectRepo.json"
+    }
+  },
+  {
+    "step": "2",
+    "description": "Load Test Page",
+    "action": "loadpage",
+    "params": {
+      "url": "http://nl:3200/test.html",
+      "browser": "chrome",
+      "options": [
+        "--user-data-dir=C:\\Users\\Josep\\AppData\\Local\\Google\\Chrome\\User Data\\Default",
+        "--profile-directory=Default"
+        ],
+        "experimentalOptions": [
+          {
+          "key":"excludeSwitches",
+          "value": ["enable-automation"]
+        },
+        {
+          "key": "useAutomationExtension",
+          "value": false
+        }
+      ],
+      "wait": 5
+    }
+  },
+  {
+    "step": "3",
+    "description": "enter value in text field",
+    "action": "setvalue",
+    "params": {
+      "objectname": "test_2",
+      "value": "hello",
+      "wait": 5
+    }
+  },
+  {
+    "step": "4",
+    "description": "close browser",
+    "action": "closebrowser"
+  }
+]
