@@ -1,0 +1,31 @@
+{
+    "txt_name": {
+        "id": "txt_name",
+        "type": "txt",
+        "text": ""
+    },
+    "test_2": {
+        "tag": "input",
+        "attrs": {
+            "class": "form-control",
+            "id": "text_ctrl",
+            "name": "text_ctrl",
+            "type": "text"
+        },
+        "text": ""
+    },
+    "test_1": {
+        "attrs": {
+            "class": "form-control",
+            "id": "text_ctrl",
+            "name": "text_ctrl",
+            "type": "text"
+        },
+        "innerHTML": "",
+        "innerText": "",
+        "outerHTML": "<input type=\"text\" class=\"form-control\" id=\"text_ctrl\" name=\"text_ctrl\">",
+        "tag": "input",
+        "text": "",
+        "xpath": "/html/body/form/div[1]/input"
+    }
+}
